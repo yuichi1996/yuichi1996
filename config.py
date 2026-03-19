@@ -15,8 +15,8 @@ SAMPLE_RATE = 16000
 CHUNK_DURATION_MS = 30  # VAD chunk size in ms
 CHUNK_SAMPLES = int(SAMPLE_RATE * CHUNK_DURATION_MS / 1000)
 SILENCE_THRESHOLD_SEC = 1.5  # seconds of silence to mark end of utterance
-CAPTURE_DEVICE = os.environ.get("CAPTURE_DEVICE", "virtual_speaker.monitor")  # PulseAudio source
-PLAYBACK_DEVICE = os.environ.get("PLAYBACK_DEVICE", "virtual_mic")            # PulseAudio sink
+CAPTURE_DEVICE = os.environ.get("CAPTURE_DEVICE", "BlackHole 2ch")  # macOS: BlackHole virtual audio device
+PLAYBACK_DEVICE = os.environ.get("PLAYBACK_DEVICE", "BlackHole 2ch")  # macOS: BlackHole virtual audio device
 
 # STT
 WHISPER_MODEL = os.environ.get("WHISPER_MODEL", "base")

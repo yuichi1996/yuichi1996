@@ -1,0 +1,28 @@
+# Teams web automation
+playwright>=1.44.0
+
+# Audio I/O (macOS / BlackHole)
+sounddevice>=0.4.6
+soundfile>=0.12.1
+numpy>=1.26.0
+
+# VAD
+torch>=2.3.0
+torchaudio>=2.3.0
+
+# STT
+faster-whisper>=1.0.0
+
+# TTS
+edge-tts>=6.1.12
+
+# LLM
+anthropic>=0.30.0
+
+# API server
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+
+# Optional: needed only if resampling is required (sr != 16000)
+librosa>=0.10.2
